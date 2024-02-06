@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework.css">
+    <script src="https://kit.fontawesome.com/0eef4b880d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<script src="homework.js"></script>
+
+<div class="wrapper">
+  <div  class="container">
+   <div class="nav1">
+             <img src="9461186.png" alt="" class="logo">
+               <span class="calculat">Calculat..</span>
+                  <div  class="icon">
+               <div class="hover1"><i id="minus" class="fa-solid fa-minus"></i></div>
+
+                   <div class="hover2"><i id="square" class="fa-regular fa-square"></i></div>
+
+                    <div class="hover3"><i id="x" class="fa-solid fa-x"></i></div>
+                     </div>
+          </div>
+       <div class="nav2">
+    <i id="dot" class="fa-solid fa-bars"></i>
+      <span class="Standard">Standard</span>
+        <div class="clockwrapper">
+              <div class="clock">
+              <span id="hrs" class="sp">00</span>
+                         <span>:</span>
+             <span id="min" class="sp"></span>
+                          <span>:</span>
+             <span id="sec" class="sec">00</span>
+              
+             
+             
+             </div> 
+      
+        </div>
+
+
+
+</div>
+
+
+<!-- clock -->
+
+<script>
+let hrs = document.getElementById('hrs')
+let min = document.getElementById('min')
+let sec = document.getElementById('sec')
+
+setInterval(()=>{
+
+   let currentime= new Date();
+ hrs.innerHTML=currentime.getHours();
+ min.innerHTML=currentime.getMinutes();
+ sec.innerHTML=currentime.getSeconds();
+
+
+},)
+
+
+
+</script>
+
+
+
+
+
+
+
+      
+                         <input class="input1style" type="text" id="input1">
+                        <input class="input2style" type="text" id="input2">
+
+                        <div class="borderleft"></div>
+                        <div class="borderright"></div>
+
+                         <div class="nav3">
+                         <span class="nav3text">MC</span>
+                         <span class="nav3text" >MR</span>
+                         <span class="nav3text" >M+</span>
+                         <span class="nav3text" >MS</span>
+                         <span class="nav3text" >M</span>
+                         
+
+                         </div>
+     
+                      <div class="button1">
+                      <div><button class="steal" onclick="percentage('')">%</button></div> 
+                      <div><button class="steal" onclick="Eval('CE')">CE</button></div> 
+                      <div><button  class="steal" onclick="clearme('c')">C</button></div> 
+                      <div><button class="steal" onclick="dele('')" ><i class="fa-solid fa-delete-left"></i></button></div>
+                      <div><button  onclick="clickme('')" ><sup>1</sup>/x</button></div> 
+
+                      <div><button  onclick="raisepower('')">x <sub>2</sup></button></div> 
+                      <div><button  onclick="squ()"><sup>2</sup><i class="fa-solid fa-square-root-variable"></i></button></div> 
+                      <div><button class="steal"  onclick="operators('/')" ><i class="fa-solid fa-divide"></i></button></div> 
+                      
+                      <div><button  onclick="clickme(7)">7</button></div> 
+                      <div><button onclick="clickme(8)">8</button></div> 
+                      <div><button  onclick="clickme(9)">9</button></div> 
+                      <div><button class="steal" onclick="operators('x')" >x</button></div> 
+                      <div><button onclick="clickme(4)">4</button></div>
+                      <div><button onclick="clickme(5)">5</button></div> 
+                      <div><button onclick="clickme(6)" >6</button></div> 
+                      <div><button class="steal" onclick="operators('-')">-</button></div> 
+                      <div><button   onclick="clickme(1)" >1</button></div> 
+                      <div><button  onclick="clickme(2)">2</button></div> 
+                      <div><button  onclick="clickme(3)">3</button></div> 
+                      <div><button  class="steal"  onclick="operators('+')">+</button></div> 
+                      <div><button  onclick="clickme()"><sup>+</sup>/ <sub>-</sub></button></div> 
+                      <div><button  onclick="clickme(0)">0</button></div> 
+                      <div><button  onclick="clickme('.')">.</button></div> 
+                      <div><button  onclick="eval()" id="lastbtn">=</button></div> 
+
+                      
+                      </div>
+
+                    
+ 
+
+
+
+
+
+
+
+
+
+  </div>
+  
+</div>
+
+    
+</body>
+</html>
+
+
+
+  
